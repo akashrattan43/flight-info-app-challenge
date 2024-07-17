@@ -10,7 +10,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
   template: `
     <div class="flight-form-container">
       <h2>Flight Information Form</h2>
-      <h4>Please fill out the information or form will be invalidated</h4>
+      <h4>Please fill out the all the information or form will be invalidated</h4>
       <form (ngSubmit)="onSubmit()">
         <div class="form-group">
           <label for="airline">Airline:</label>
