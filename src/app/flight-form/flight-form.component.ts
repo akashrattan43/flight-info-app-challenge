@@ -1,16 +1,17 @@
+// src/app/components/flight-form/flight-form.component.ts
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
-import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { HttpClient, HttpHeaders, HttpClientModule } from '@angular/common/http';
 
 @Component({
   selector: 'app-flight-form',
   standalone: true,
-  imports: [FormsModule, CommonModule],
+  imports: [FormsModule, CommonModule, HttpClientModule],
   template: `
     <div class="flight-form-container">
       <h2>Flight Information Form</h2>
-      <h4>Please fill out the all the information or form will be invalidated</h4>
+      <h4>Please fill out all the information or the form will be invalidated</h4>
       <form (ngSubmit)="onSubmit()">
         <div class="form-group">
           <label for="airline">Airline:</label>
